@@ -8,6 +8,13 @@ function Home() {
     <>
       <div style={{ backgroundColor: "#faf9f7" }}>
         <Header />
+        <div>
+          <a href="#">
+            <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-[83px] mt-[80px]">
+              Add
+            </button>
+          </a>
+        </div>
         <Table />
         <Footer />
       </div>

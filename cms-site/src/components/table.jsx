@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Table() {
   return (
-    <div className="mt-[80px] mb-[80px] ml-[80px] mr-[80px] text-[#222222]">
+    <div className="mt-[8px] mb-[152px] ml-[80px] mr-[80px] text-[#222222]">
       <div className="overflow-x-auto rounded-xl border-2 shadow-xl">
         <table className="table bg-[#faf9f7]">
           {/* head */}

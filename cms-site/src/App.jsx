@@ -1,6 +1,7 @@
 import "./App.css";
-import Home from "./pages/home";
-import LoginPage from "./pages/login";
+import AddPage from "./pages/add-page";
+import EditPage from "./pages/edit-page";
+
 
 
 function App() {
@@ -8,7 +9,11 @@ function App() {
     <>
     {/* <LoginPage/>
      */}
-     <Home/>
+     {/* <Home/>
+      */}
+      {/* <AddPage/>
+       */}
+       <EditPage/>
     </>
   );
 }
