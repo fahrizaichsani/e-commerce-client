@@ -1,48 +1,32 @@
 export default function Header() {
   return (
-    <div className="navbar bg-color2 font-sans">
+    <div className="navbar bg-[#faf9f7] font-sans">
       <div className="flex-1">
-        <a className="btn btn-ghost text-custom-color text-lg">BThings</a>
+        <img
+          style={{ maxWidth: "18%", marginLeft: "57%" }}
+          alt="Tailwind CSS Navbar component"
+          src="https://1000logos.net/wp-content/uploads/2018/04/Blink-182-Symbol.png"
+        />
       </div>
       <div className="flex-none gap-2">
-        <div className="form-control">
+        <div className="form-control flex">
           <input
             type="text"
             placeholder="Search"
             className="input input-bordered w-24 md:w-auto bg-white"
           />
-        </div>
-        <div className="dropdown dropdown-end">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle avatar"
+          <button
+            type="submit"
+            className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2 w-[187px]"
           >
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://1000logos.net/wp-content/uploads/2018/04/Blink-182-Symbol.png"
-              />
-            </div>
-          </div>
-          <ul
-            tabIndex={0}
-            className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
+            Search
+          </button>
         </div>
+        <a href="#">
+          <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2">
+            Login
+          </button>
+        </a>
       </div>
     </div>
   );

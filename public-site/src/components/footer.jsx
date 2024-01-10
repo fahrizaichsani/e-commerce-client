@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer p-5 bg-neutral text-color4 font-sans">
+    <footer className="footer p-5 bg-[#f4eddd] text-[#222222] font-sans">
       <aside>
         <svg
           width="50"
