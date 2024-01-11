@@ -13,7 +13,7 @@ export default {
         color4: "#176B87"
       },
       fontFamily:{
-        sans: ['Graphik', 'sans-serif'],
+        mono: ['Roboto Mono', 'monospace'],
       },
       backgroundColor: {
         'neutral': '#B4D4FF',
