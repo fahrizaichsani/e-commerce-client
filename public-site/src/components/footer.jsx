@@ -19,7 +19,7 @@ export default function Footer() {
           Providing reliable tech since 1992
         </p>
       </aside>
-      <nav>
+      <nav className="pl-[80%]">
         <header className="footer-title">Social</header>
         <div className="grid grid-flow-col gap-4">
           <a>

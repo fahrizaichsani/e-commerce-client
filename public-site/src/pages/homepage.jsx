@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Pagination from "../components/pagination";
+import ButtonJoin from "../components/button-join";
 
 function Homepage() {
   return (
@@ -18,8 +19,8 @@ function Homepage() {
         }}
       >
         <Header />
-        {/* <Carousel /> */}
         <Banner />
+        <ButtonJoin />
         <div
           style={{
             display: "flex",
@@ -28,7 +29,6 @@ function Homepage() {
             flexWrap: "wrap",
             gap: 10,
             padding: "48px 24px",
-            margin: 100,
           }}
         >
           <Card />
