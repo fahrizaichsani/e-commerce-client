@@ -1,4 +1,4 @@
-export default function Card() {
+export default function Card({item}) {
   return (
     <div >
       <div className="flex justify-center card w-[400px] h-[600px] shadow-xl">
@@ -12,7 +12,7 @@ export default function Card() {
           />
         </figure>
         <div className="card-body bg-[#faf9f8] rounded-b-md">
-          <h2 className="card-title justify-center">Name</h2> {/* Name */}
+          <h2 className="card-title justify-center">{item.name}</h2> {/* Name */}
           <div>
             <a href="#">
               <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] mx-auto block mt-14">
