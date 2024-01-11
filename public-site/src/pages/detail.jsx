@@ -18,7 +18,7 @@ function Detail() {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "120px 24px",
+            padding: "180px 24px 100px 24px",
           }}
         >
           <CardDetail />
