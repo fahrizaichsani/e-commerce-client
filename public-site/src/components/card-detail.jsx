@@ -10,7 +10,7 @@ export default function CardDetail() {
           className="object-cover w-full h-full"
         />
       </figure>
-      <div className="card-body bg-[#faf9f8]">
+      <div className="card-body bg-[#faf9f8] rounded-b-3xl">
         <h2 className="card-title justify-center">Name</h2> {/* Name */}
         <p>Deskripsi</p>
         <span>Harga</span>

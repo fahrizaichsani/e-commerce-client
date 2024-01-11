@@ -11,7 +11,7 @@ export default function Card() {
             className="object-cover w-full h-full"
           />
         </figure>
-        <div className="card-body bg-[#faf9f8]">
+        <div className="card-body bg-[#faf9f8] rounded-b-md">
           <h2 className="card-title justify-center">Name</h2> {/* Name */}
           <div>
             <a href="#">
