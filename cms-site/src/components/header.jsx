@@ -23,11 +23,6 @@ export default function Header() {
             Search
           </button>
         </div>
-        <a href="#">
-          <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2 text-[12px]">
-            Login
-          </button>
-        </a>
       </div>
     </div>
   );

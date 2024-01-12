@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios"
+import axios from "axios";
 import Card from "../components/card";
 import Footer from "../components/footer";
 import Header from "../components/header";
@@ -10,24 +10,39 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Homepage() {
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
+  const [page, setPage] = useState(1);
 
-  const fetchProducts = async () => {
+  const fetchProducts = async (value) => {
     try {
-      const {data} = await axios({
-        url: "http://35.198.252.59/publics/pub",
-        method: "GET"
-      })
+      let query = { page: 1 };
+      if (value.page) {
+        query = value;
+      }
+      
+      if (value.sorting) {
+        query = value
+      }
+      console.log(query);
+      const { data } = await axios({
+        url: "http://api.casablancass.online/publics/pub",
+        method: "GET",
+        params: query,
+      });
 
-      setProducts(data)
+      setProducts(data);
     } catch (error) {
       console.log(error);
-      
     }
-  }
+  };
   useEffect(() => {
-    fetchProducts()
-  }, [])
+    fetchProducts();
+  }, []);
+
+  useEffect(() => {
+    fetchProducts({ page });
+    // console.log(page);
+  }, [page]);
 
   return (
     <>
@@ -41,7 +56,7 @@ function Homepage() {
       >
         <Header />
         <Banner />
-        <ButtonJoin />
+        <ButtonJoin fetchProducts={fetchProducts}/>
         <div
           style={{
             display: "flex",
@@ -52,12 +67,13 @@ function Homepage() {
             padding: "48px 24px",
           }}
         >
-          {products.length > 0 && products.map(item => {
-            console.log(item);
-            return <Card key={item.id} item={item}/>
-          })}
+          {products.length > 0 &&
+            products.map((item) => {
+              console.log(item);
+              return <Card key={item.id} item={item} />;
+            })}
         </div>
-        <Pagination />
+        <Pagination setPage={setPage} page={page} />
         <div style={{ marginTop: 100 }}>
           <Footer />
         </div>

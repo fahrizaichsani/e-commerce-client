@@ -6,6 +6,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import priceFormat from "../helpers/priceFormat";
 
 function Detail() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ function Detail() {
   const fetchDetailProduct = async () => {
     try {
       const { data } = await axios({
-        url: `http://35.198.252.59/publics/pub/${1}`,
+        url: `http://35.198.252.59/publics/pub/${id}`,
         method: "GET",
       });
 
@@ -26,6 +27,10 @@ function Detail() {
   useEffect(() => {
     fetchDetailProduct()
   }, [])
+
+  // if (detailProduct.price) {
+  //   detailProduct.price = priceFormat(+detailProduct.price)
+  // }
   return (
     <>
       <div

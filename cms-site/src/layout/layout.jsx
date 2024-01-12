@@ -1,16 +1,15 @@
-import React from "react";
-import Table from "../components/table";
+import { Outlet } from "react-router-dom";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-function Home() {
+export default function Layout() {
   return (
     <>
     <div className="">
-      <Table/>
+    <Header/>
+    <Outlet/>
+    <Footer/>
     </div>
     </>
-  );
+    )
 }
-
-export default Home;

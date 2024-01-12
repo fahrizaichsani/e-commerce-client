@@ -1,14 +1,22 @@
 import "./App.css";
-import Detail from "./pages/detail";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/homepage";
+import Detail from "./pages/detail";
 
 function App() {
-  return (
-    <>
-    <Homepage/>
-    <Detail/>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/homepage",
+      element: <Homepage />,
+    },
+    {
+      path: "/detail/:id",
+      element: <Detail/>
+    },
+  ]);
+  return <>
+  <RouterProvider router={router}/>
+  </>;
 }
 
 export default App;
