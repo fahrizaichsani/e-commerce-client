@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 export default function Layout() {
   return (
     <>
-    <div className="">
+    <div className="bg-[#faf9f7]">
     <Header/>
     <Outlet/>
     <Footer/>
