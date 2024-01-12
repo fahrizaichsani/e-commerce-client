@@ -1,16 +1,16 @@
 export default function AddForm() {
     return (
       <div >
-          <img src="" alt="" />
         <div
           className="
-        flex justify-center items-center
-        bg-[#faf9f7]"
-        >
+          flex justify-center items-center flex-col
+          bg-[#faf9f7]"
+          >
+            <span className="mt-[20px] text-2xl text-[#2e3339]" >Add Form</span>
           <div
             className="container flex justify-center items-center pb-[60px]"
-            style={{ height: "100vh" }}
-          >
+            style={{ height: "80vh" }}
+            >
             <form className="flex flex-col justify-center items-center h-[550px] w-[400px] border rounded-xl shadow-xl">
               <div className="input-group mb-2">
                 <label className="form-label text-[#222222]">Name:</label>

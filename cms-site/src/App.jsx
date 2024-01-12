@@ -1,21 +1,19 @@
 import "./App.css";
-import AddPage from "./pages/add-page";
-import EditPage from "./pages/edit-page";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LoginPage from "./pages/login";
 
 
 
 function App() {
-  return (
-    <>
-    {/* <LoginPage/>
-     */}
-     {/* <Home/>
-      */}
-      {/* <AddPage/>
-       */}
-       <EditPage/>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/login",
+      element: <LoginPage/>,
+    }
+  ]);
+  return <>
+  <RouterProvider router={router}/>
+  </>;
 }
 
 export default App;

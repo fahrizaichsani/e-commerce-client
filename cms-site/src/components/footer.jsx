@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer p-5 bg-[#f4eddd] text-[#222222] font-sans">
+    <footer className="footer p-5 bg-[#f4eddd] text-[#222222] font-mono">
       <aside>
         <svg
           width="50"
@@ -19,7 +19,7 @@ export default function Footer() {
           Providing reliable tech since 1992
         </p>
       </aside>
-      <nav>
+      <nav className="pl-[80%]">
         <header className="footer-title">Social</header>
         <div className="grid grid-flow-col gap-4">
           <a>

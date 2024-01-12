@@ -1,29 +1,30 @@
 export default function Header() {
   return (
-    <div className="navbar bg-[#faf9f7] font-sans">
-      <div className="flex-1">
-        <img
-          style={{ maxWidth: "18%", marginLeft: "57%" }}
+    <div className="navbar bg-[#faf9f7] font-mono fixed z-[9999]">
+      {/* <div className="flex-1"> */}
+      <div className="w-[50%]"> 
+        <img className="max-w-[18%] object-cover"
           alt="Tailwind CSS Navbar component"
           src="https://1000logos.net/wp-content/uploads/2018/04/Blink-182-Symbol.png"
         />
       </div>
-      <div className="flex-none gap-2">
-        <div className="form-control flex "> {/* search */}
+      {/* </div> */}
+      <div className="flex-none w-[50%] justify-end">
+        <div className="form-control flex flex-row">
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-24 md:w-auto bg-white border-2 mb-[5px]"
+            className="input input-bordered w-24 md:w-auto bg-white text-[12px]"
           />
           <button
             type="submit"
-            className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2 w-[187px]"
+            className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2 w-[70px] text-[12px]"
           >
             Search
           </button>
         </div>
         <a href="#">
-          <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2">
+          <button className="btn btn-primary bg-[#2e3339] text-[#faf9f7] ml-2 text-[12px]">
             Login
           </button>
         </a>

@@ -1,6 +1,6 @@
 export default function LoginForm() {
     return (
-      <div >
+      <div className="font-mono">
           <img src="" alt="" />
         <div
           className="
@@ -11,8 +11,8 @@ export default function LoginForm() {
             className="container flex justify-center items-center"
             style={{ height: "100vh" }}
           >
-            <form className="flex flex-col justify-center items-center h-[250px] w-[400px] border rounded-xl shadow-xl">
-              <div className="input-group mb-2">
+            <form className="flex flex-col justify-center items-center h-[280px] w-[400px] border rounded-xl shadow-xl">
+              <div className="input-group mb-2 mt-[25px]">
                 <label className="form-label text-[#222222]">Email:</label>
                 <input type="text" className="form-control h-[30px] rounded shadow-xl bg-[#ffffff]" />
               </div>
