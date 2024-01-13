@@ -11,7 +11,7 @@ export default function CardDetail({ detailProduct }) {
         <p>Description: {detailProduct.description}</p>
         <span>Price: {priceFormat(detailProduct.price)}</span>
         <span>Stock: {detailProduct.stock}</span>
-        <span>Category: {detailProduct.categoryId}</span>
+        {/* <span>Category: {detailProduct.categoryId}</span> */}
       </div>
     </div>
   );

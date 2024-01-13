@@ -23,7 +23,7 @@ function Homepage() {
       if (value.sorting) {
         query = value
       }
-      console.log(query);
+
       const { data } = await axios({
         url: "http://api.casablancass.online/publics/pub",
         method: "GET",
@@ -41,7 +41,6 @@ function Homepage() {
 
   useEffect(() => {
     fetchProducts({ page });
-    // console.log(page);
   }, [page]);
 
   return (
@@ -69,7 +68,7 @@ function Homepage() {
         >
           {products.length > 0 &&
             products.map((item) => {
-              console.log(item);
+              // console.log(item);
               return <Card key={item.id} item={item} />;
             })}
         </div>

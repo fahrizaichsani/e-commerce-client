@@ -6,7 +6,7 @@ import Detail from "./pages/detail";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/homepage",
+      path: "/",
       element: <Homepage />,
     },
     {

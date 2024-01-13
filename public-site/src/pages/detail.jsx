@@ -15,7 +15,7 @@ function Detail() {
   const fetchDetailProduct = async () => {
     try {
       const { data } = await axios({
-        url: `http://35.198.252.59/publics/pub/${id}`,
+        url: `http://api.casablancass.online/publics/pub/${id}`,
         method: "GET",
       });
 
