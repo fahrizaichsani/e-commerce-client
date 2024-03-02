@@ -25,7 +25,7 @@ function Home() {
       // }
 
       const { data } = await axios({
-        url: "http://api.casablancass.online/products",
+        url: "http://localhost:3000/products",
         method: "GET",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),
@@ -42,7 +42,7 @@ function Home() {
   const deleteProduct = async (id) => {
     try {
       const { data } = await axios({
-        url: `http://api.casablancass.online/products/${id}`,
+        url: `http://localhost:3000/products/${id}`,
         method: "DELETE",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),

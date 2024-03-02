@@ -25,7 +25,7 @@ function Homepage() {
       }
 
       const { data } = await axios({
-        url: "http://api.casablancass.online/publics/pub",
+        url: "http://localhost:3000/publics/pub",
         method: "GET",
         params: query,
       });

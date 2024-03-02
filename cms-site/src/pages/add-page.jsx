@@ -27,7 +27,7 @@ function AddPage() {
     event.preventDefault();
     try {
       const { data } = await axios({
-        url: "http://api.casablancass.online/products",
+        url: "http://localhost:3000/products",
         method: "POST",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),

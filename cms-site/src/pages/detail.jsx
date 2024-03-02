@@ -12,7 +12,7 @@ function Detail() {
   const fetchDetailProduct = async () => {
     try {
       const { data } = await axios({
-        url: `http://api.casablancass.online/products/${id}`,
+        url: `http://localhost:3000/products/${id}`,
         method: "GET",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),

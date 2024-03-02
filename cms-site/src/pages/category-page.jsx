@@ -12,7 +12,7 @@ function Category() {
   const fetchProducts = async (value) => {
     try {
       const { data } = await axios({
-        url: "http://api.casablancass.online/categories",
+        url: "http://localhost:3000/categories",
         method: "GET",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),
